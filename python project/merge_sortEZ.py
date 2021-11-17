@@ -1,7 +1,4 @@
-from __future__ import print_function
 #insertion sort
-#for sleep()
-import time
 
 #only accepts arrays (lists)
 #this memory complexity O(n)
@@ -24,9 +21,6 @@ def insertionsort(array):
         #or the array has not hit array[-1] do what is indented
         #all of this is possible since lists are mutable (changable)
         while b >=0 and keya < array[b]:
-            print('keya:', keya, end=' < ')
-            print('array[b]:', array[b])
-            time.sleep(2)
             #shifts the array[b] to the right by one essentially taking the place of array[a].
             #and array[a] taking the place of b but is currently saved in keya while being looped
             #in the while loop as long ad the above conditions are met
@@ -36,30 +30,13 @@ def insertionsort(array):
             #it -1 to go check the the next spot
             b-=1
             #then do the while loop again until b= -1 or array[b] < array[a] (keya) which at that point stops
-            print(array)
-            time.sleep(2)
         #once the while conditions are no longer met put the value of keya into array[j+1]
         array[b+1]=keya
-        print(array)
-        time.sleep(1)
+def merge(array1, array2):
+    while array1 is not empty and array2 is not empty:
+        if array1[a]>=array2[b]:
 
 #main
-print('This sorting method is called insertion sort')
-time.sleep(3)
-print('This is the second simplest sorting method')
-time.sleep(3)
-print('The idea is simple but complicated so pay attention or you may get lost')
-time.sleep(3)
-print("The idea of insertion sort is that it's a for loop of array x from the elements array[1]->array[x]")
-print("or from second element of the array to the last")
-time.sleep(3)
-print("For each element, starting from the second, of array it is compared to the the previous element")
-time.sleep(3)
-print('If the element before the element is less than it it switch places and goes on until')
-print('either there is no more element to move or the element is larger than the previous element')
-time.sleep(3)
-print('We will try an example with a list of [7,6,5,4,3,2,1]')
-time.sleep(3)
 unsortarray=[7,6,5,4,3,2,1]
 insertionsort(unsortarray)
 print(unsortarray)
