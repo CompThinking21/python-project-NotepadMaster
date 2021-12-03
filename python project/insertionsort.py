@@ -157,3 +157,4 @@ for x in regextedstringsofnumbers:
 insertionsort(userlist)
 #done
 print(userlist)
+time.sleep(15)

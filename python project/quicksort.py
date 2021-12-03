@@ -136,3 +136,4 @@ sortedlist=[]
 #calling quiksort on user's list
 QuickSort(userlist, sortedlist)
 print(sortedlist)
+time.sleep(15)

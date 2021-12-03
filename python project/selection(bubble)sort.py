@@ -119,5 +119,6 @@ sortlist=SelectionSort(userlist)
 #printin'
 print(sortlist)
 #all the other algo copy this so yeah I was lazy.
+time.sleep(15)
 
 
