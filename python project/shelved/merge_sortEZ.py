@@ -1,3 +1,5 @@
+#originally suppose to demonstrate the mergestep by have insertion sort 2 halves of an array
+#then mergining it into a sorted array
 #insertion sort
 
 #only accepts arrays (lists)
